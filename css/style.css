@@ -1,0 +1,171 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+
+body {
+    font-family: "Inter Tight", sans-serif;
+    background: linear-gradient(to bottom, #030712, #1F2937);
+    color: white;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100px;
+}
+
+.logo {
+  font-size: 2em;
+  text-decoration: none;
+  font-weight: 800;
+  color: white;
+}
+
+.nav__header {
+  display: flex;
+  gap: 10px;
+}
+
+.nav__header a {
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  background-color: white;
+  color: black;
+}
+
+.nav__header a:hover {
+  color: red;
+}
+
+.hero {
+  display: flex;
+  height: 100%;
+  margin: 20px 0px;
+  background-color: #202938;
+  border-radius: 10px;
+  background: linear-gradient(to bottom, #1F2937, #4c5564);
+
+}
+
+
+
+.hero__buttons {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.hero__hero-portrait,
+.hero__hero-text {
+  flex: 1;
+}
+.hero__hero-portrait img {
+  width: 50%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.hero__hero-text {
+  font-size: 30px;
+}
+
+.btn {
+  display: inline-block;       /* aby šlo nastavit padding */
+  padding: 10px 20px;
+  background-color: #000;      /* barva tlačítka */
+  color: #fff;                 /* barva textu */
+  text-decoration: none;       /* odstraní podtržení */
+  border-radius: 5px;          /* zaoblené rohy */
+  transition: background 0.3s;
+}
+
+.btn:hover {
+  background-color: #333;      /* změna barvy při hover */
+}
+
+
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  gap: 30px;
+  margin: 20px 0px;
+  
+
+}
+
+.buttons__button-foto,
+.buttons__button-video {
+  flex: 1;
+  height: 300px;
+  background-color: #d1d5db;
+  color: black;
+  border-radius: 10px;
+  margin: 40px;
+}
+
+.promo {
+  margin: 20px 0px;
+}
+
+.promo ul {
+  list-style-position: inside;
+}
+
+.container {
+  /*border: 1px solid red;*/
+}
+
+.container {
+  max-width: 1536px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0.5rem;
+  padding-right: 0.5rem;
+}
+
+/* 2xl */
+@media (max-width: 1536px) {
+  .container {
+    max-width: 1280px;
+  }
+}
+
+/* xl */
+@media (max-width: 1280px) {
+  .container {
+    max-width: 1024px;
+  }
+}
+
+/* lg */
+@media (max-width: 1024px) {
+  .container {
+    max-width: 768px;
+  }
+}
+
+/* md */
+@media (max-width: 768px) {
+  .container {
+    max-width: 640px;
+  }
+}
+
+/* sm */
+@media (max-width: 640px) {
+  .container {
+    max-width: 475px;
+  }
+}
+
+/* xs */
+@media (max-width: 475px) {
+  .container {
+    width: 100%;
+  }
+}
