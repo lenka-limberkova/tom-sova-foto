@@ -5,13 +5,15 @@
 }
 
 div {
-  /*
-  border: 1px solid yellow; */
+  
+  /*border: 1px solid yellow; */
 }
 
+/*HOMEPAGE*/
+
 body {
-    font-family: "Inter Tight", sans-serif;
-    background-color: #000;
+    font-family: "Roboto Mono", sans-serif;
+    background-color: black;
     color: white;
 }
 
@@ -20,11 +22,11 @@ body {
   justify-content: space-between;
   align-items: center;
   height: 100px;
-  border-bottom: 1px solid mediumslateblue;
+
 }
 
 .logo {
-  font-size: 2em;
+  font-size: 2.5em;
   text-decoration: none;
   font-weight: 800;
   color: white;
@@ -32,33 +34,44 @@ body {
 
 .nav__header {
   display: flex;
-  gap: 2em;
+  gap: 30px;
 }
-
 .nav__header a {
   text-decoration: none;
   color: white;
 }
-
-.nav__header a:hover {
+.nav__header a:hover,
+.nav__header a:active {
   color: mediumslateblue;
 }
 
 .hero {
   display: flex;
   height: 100%;
-  margin: 20px 0px;
   border-radius: 10px;
   padding: 20px;
 
+
 }
 
+.hero__hero-text h1 {
+  text-shadow: 2px 2px 8px mediumslateblue;
+  font-size: 2.7em;
+
+}
+
+.hero__hero-text p {
+  font-size: 0.8em;
+
+
+}
 
 
 .hero__buttons {
   display: flex;
   justify-content: center;
   gap: 20px;
+  margin-top: 2em;
 }
 
 .hero__hero-portrait,
@@ -69,7 +82,8 @@ body {
 .hero__hero-portrait img {
   width: 100%;
   height: auto;
-  border-radius: 10px;
+    margin: 20px 0px;
+
 }
 
 .hero__hero-text {
@@ -79,20 +93,25 @@ body {
   gap: 20px;
 }
 
+
 .btn {
   display: inline-block;       /* aby šlo nastavit padding */
-  padding: 10px 20px;
-  background-color: mediumslateblue;      /* barva tlačítka */
-  color: #000;                 /* barva textu */
-  text-decoration: none;       /* odstraní podtržení */
-  border-radius: 10px;          /* zaoblené rohy */
+  padding: 10px;
+  background-color: black;
+  color: mediumslateblue;                
+  text-decoration: none;      
+  border-radius: 30px;          
   transition: background 0.3s;
+  width: 250px;
+  text-align: center;
+  border: 2px solid mediumslateblue;
+  font-size: 20px;
 }
 
 .btn:hover {
-  background-color: white;      /* změna barvy při hover */
+  color: white; 
+  border: 2px solid white;
 }
-
 
 .promo {
   margin: 20px 0px;
@@ -100,11 +119,16 @@ body {
 
 .promo ul {
   list-style-position: inside;
+  margin: 20px;
+}
+
+footer {
+  background-color: mediumslateblue;
 }
 
 .container {
-  /*
-  border: 1px solid red; */
+ /* 
+  border: 1px solid mediumslateblue; */
 }
 
 .container {
@@ -156,3 +180,83 @@ body {
     width: 100%;
   }
 }
+
+/*PORTFOLIO*/
+
+/* Filtrovací tlačítka */
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.filter-btn {
+  background: none;
+  border: none;
+  color: mediumslateblue;
+  padding: 10px 20px;
+  margin: 0 5px;
+  cursor: pointer;
+  border-radius: 20px;
+  transition: all 0.3s ease;
+}
+
+.filter-btn:hover,
+.filter-btn.active {
+  background: none;
+  color: white;
+  text-decoration: underline white;
+}
+
+button {
+  font-family: inherit; /* dědí font z rodiče (body) */
+}
+
+/* Galerie fotek (dvě kolony) */
+.gallery {
+  display: flex;
+  gap: 20px;
+}
+
+.gallery .column {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.gallery img {
+  width: 100%;
+}
+
+
+/* Video položky */
+.item.video {
+  margin-top: 20px;
+}
+
+.item video {
+  width: 100%;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.video-wrapper {
+  max-width: 900px; /* maximální šířka videa */
+  margin: 0 auto;   /* zarovnání na střed */
+}
+
+.video-wrapper iframe {
+  width: 100%;      /* video zabere celou šířku wrapperu */
+  height: 500px;    /* výšku uprav podle potřeby */
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Responsivní chování */
+@media (max-width: 768px) {
+  .gallery {
+    flex-direction: column;
+  }
+}
+
+/*Kontakt*/
