@@ -1,3 +1,10 @@
+:root {
+  --color: #8B7ED6;
+  --gray: #B3B3B3;
+  --white: #fff;
+  --black: #000;
+}
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -13,16 +20,16 @@ body {
     color: white;
 }
 
-.header {
+.header-inner {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 100px;
+  height: 80px;
 
 }
 
 .logo {
-  font-size: 2.5em;
+  font-size: 2em;
   text-decoration: none;
   font-weight: 800;
   color: white;
@@ -38,28 +45,32 @@ body {
 }
 .nav__header a:hover,
 .nav__header a:active {
-  color: mediumslateblue;
+  color: var(--color);
 }
 
 .hero {
   display: flex;
   flex-direction: column;
   height: 100%;
-  padding: 20px;
+  padding: 100px;
+  
 
+}
 
+.hero-bg {
+background-image: url("bg.jpg"); /* cesta k obrázku */
+  background-repeat: no-repeat;        /* aby se neopakoval */
+  background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
+  background-position: center;         /* zarovnání na střed */
 }
 
 .hero__hero-text h1 {
-  text-shadow: 2px 2px 8px mediumslateblue;
-  font-size: 2.7em;
+  font-size: 2.5em;
 
 }
 
-.hero__hero-text p {
-  font-size: 0.8em;
-
-
+.text--color {
+  color: var(--color);
 }
 
 
@@ -71,38 +82,42 @@ body {
 }
 
 
-.hero__hero-portrait img {
-  width: 100%;
-  height: auto;
-    margin: 20px 0px;
-
-}
 
 .hero__hero-text {
   font-size: 30px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
+.hero__hero-text p {
+  color: var(--gray);
+}
 
 .btn {
   display: inline-block;       /* aby šlo nastavit padding */
   padding: 10px;
-  background-color: black;
-  color: mediumslateblue;                
+  background-color: transparent;
+  color: var(--color);                
   text-decoration: none;      
-  border-radius: 30px;          
+  border-radius: 15px;          
   transition: background 0.3s;
   width: 250px;
   text-align: center;
-  border: 2px solid mediumslateblue;
+  border: 2px solid var(--color);
   font-size: 20px;
+}
+
+.btn a {
+  text-decoration: none;
+  color: inherit;
 }
 
 .btn:hover {
   color: white; 
-  border: 2px solid white;
+  border: none;
+  background-color: var(--color);
 }
 
 .promo {
@@ -115,7 +130,8 @@ body {
 }
 
 footer {
-  background-color: mediumslateblue;
+  background-color: black;
+  color: darkgrey;
 }
 
 
@@ -171,6 +187,11 @@ footer {
 
 /*PORTFOLIO*/
 
+.portfolio h1,
+.contact-info h1 {
+  margin-top: 20px;
+}
+
 /* Filtrovací tlačítka */
 .filter-buttons {
   text-align: center;
@@ -178,22 +199,25 @@ footer {
 }
 
 .filter-btn {
-  background: none;
+  background: transparent;
   border: none;
-  color: mediumslateblue;
-  padding: 10px 20px;
+  color: white;
+  padding: 5px 10px;
   margin: 0 5px;
   cursor: pointer;
-  border-radius: 20px;
-  transition: all 0.3s ease;
+  transition: color 0.3s ease;
+  font-size: 15px;
+  position: relative;
 }
 
-.filter-btn:hover,
-.filter-btn.active {
-  background: none;
-  color: white;
-  text-decoration: underline white;
+.filter-btn:hover {
+  color: var(--color);
 }
+
+.filter-btn.active {
+  color: var(--color);
+}
+
 
 button {
   font-family: inherit; /* dědí font z rodiče (body) */
@@ -227,7 +251,7 @@ button {
 /* Video položky */
 
 .video-section {
-  background-color: white;
+  background-color: none;
 
 }
 .item.video {
@@ -276,4 +300,50 @@ button {
   flex-direction: column;
   gap: 20px;
 
+}
+
+.about-me {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 20px;
+}
+
+
+
+.about-me-portrait img {
+  width: 50%;
+  border-radius: 20px;
+  align-self: center;
+  
+}
+
+.about-me-portrait,
+.about-me-text {
+  flex: 1;
+}
+
+.contact-info__email {
+  text-align: center;
+  font-size: 30px;
+}
+
+.skills-gear {
+  display: flex;
+  gap: 30px;
+  justify-content: space-evenly;
+  margin-top: 20px;
+}
+
+.skills-gear h2{
+  color: var(--color);
+}
+
+ul {
+  list-style-position: inside; /* odrážka bude součástí obsahu */
+}
+
+li::marker {
+  color: var(--color); /* jen odrážka */
+  font-size: 1.2em; /* můžeš změnit i velikost */
 }
