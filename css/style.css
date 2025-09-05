@@ -58,14 +58,14 @@ body {
 }
 
 .hero-bg {
-background-image: url("bg.jpg"); /* cesta k obrázku */
+background-image: url("DSCF2435.JPG"); /* cesta k obrázku */
   background-repeat: no-repeat;        /* aby se neopakoval */
   background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
   background-position: center;         /* zarovnání na střed */
 }
 
 .hero__hero-text h1 {
-  font-size: 2.5em;
+  font-size: 3.5em;
 
 }
 
@@ -84,7 +84,7 @@ background-image: url("bg.jpg"); /* cesta k obrázku */
 
 
 .hero__hero-text {
-  font-size: 30px;
+  font-size: 1.5em;
   display: flex;
   flex-direction: column;
   gap: 20px;
@@ -293,6 +293,7 @@ button {
   display: flex;
   flex-direction: column;
   gap: 20px;
+  text-align: center;
 }
 
 .about-me-text {
@@ -306,7 +307,7 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 
@@ -323,16 +324,24 @@ button {
   flex: 1;
 }
 
-.contact-info__email {
+.email {
   text-align: center;
   font-size: 30px;
+}
+
+
+.contact-info__email svg {
+  margin: auto;
+	width: 50px;
+		max-width: 100%;
+    position: relative;
 }
 
 .skills-gear {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .skills-gear h2{
@@ -347,3 +356,4 @@ li::marker {
   color: var(--color); /* jen odrážka */
   font-size: 1.2em; /* můžeš změnit i velikost */
 }
+
