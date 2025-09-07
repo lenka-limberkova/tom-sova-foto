@@ -20,9 +20,6 @@ body {
     color: white;
 }
 
-.header {
-  border-bottom: 1px solid #1e1e1e;
-}
 
 .header-inner {
   display: flex;
@@ -41,15 +38,18 @@ body {
 
 .nav__header {
   display: flex;
-  gap: 30px;
+  gap: 50px;
 }
 .nav__header a {
   text-decoration: none;
   color: white;
 }
-.nav__header a:hover,
-.nav__header a:active {
+.nav__header a:hover {
   color: var(--color);
+}
+
+.nav__header a.active {
+color: var(--color);
 }
 
 .hero {
