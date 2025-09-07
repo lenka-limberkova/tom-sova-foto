@@ -20,6 +20,10 @@ body {
     color: white;
 }
 
+.header {
+  border-bottom: 1px solid #1e1e1e;
+}
+
 .header-inner {
   display: flex;
   justify-content: space-between;
@@ -58,7 +62,7 @@ body {
 }
 
 .hero-bg {
-background-image: url("DSCF2435.JPG"); /* cesta k obrázku */
+background-image: url("/css/2.JPG"); /* cesta k obrázku */
   background-repeat: no-repeat;        /* aby se neopakoval */
   background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
   background-position: center;         /* zarovnání na střed */
@@ -66,11 +70,13 @@ background-image: url("DSCF2435.JPG"); /* cesta k obrázku */
 
 .hero__hero-text h1 {
   font-size: 3.5em;
+   text-shadow: 2px 2px 5px black;
 
 }
 
 .text--color {
   color: var(--color);
+   text-shadow: 2px 2px 5px black;
 }
 
 
@@ -93,19 +99,19 @@ background-image: url("DSCF2435.JPG"); /* cesta k obrázku */
 
 .hero__hero-text p {
   color: var(--gray);
+
 }
 
 .btn {
   display: inline-block;       /* aby šlo nastavit padding */
   padding: 10px;
-  background-color: transparent;
-  color: var(--color);                
+  background-color: white;
+  color: black;                
   text-decoration: none;      
   border-radius: 15px;          
   transition: background 0.3s;
   width: 250px;
   text-align: center;
-  border: 2px solid var(--color);
   font-size: 20px;
 }
 
@@ -242,10 +248,6 @@ button {
   width: 100%;
 }
 
-
-.column2 {
-  margin-top: 50px;
-}
 
 
 /* Video položky */
