@@ -9,7 +9,8 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:ital,wght@0,100..900;1,100..900&family=Outfit:wght@100..900&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
         <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
-<title>Fotografie a video produkce | Tom Sova</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>Fotografie a video produkce | Tom Sova</title>
 </head>
 <body>
 
@@ -18,10 +19,13 @@
         <div class="logo__header">
             <a href="/" class="logo">TOM SOVA</a>
         </div>
-        <nav class="nav__header">
+            <nav class="topnav" id="myTopnav">
             <a href="/" class="active">PORTFOLIO</a>
             <a href="../o-mne/">O MNĚ</a>
         </nav>
+        <button class="icon" id="menuToggle">
+                <i class="fa fa-bars"></i>
+            </button>
         </div>
 
     </header>
@@ -86,43 +90,9 @@
   </p>
     </footer>
 
-<script>
-// Filtrování pomocí tlačítek
-const filterBtns = document.querySelectorAll(".filter-btn");
-const items = document.querySelectorAll(".item");
+<script src="/js/gallery.js"></script>
+    <script src="/js/menu.js"></script>
 
-function applyFilter(filter, btn) {
-  filterBtns.forEach(b => b.classList.remove("active"));
-  btn.classList.add("active");
-
-  items.forEach(item => {
-    if (item.classList.contains(filter)) {
-      if (item.classList.contains("gallery")) {
-        item.style.display = "flex";
-      } else {
-        item.style.display = "block";
-      }
-    } else {
-      item.style.display = "none";
-    }
-  });
-}
-
-// Kliknutí na tlačítka
-filterBtns.forEach(btn => {
-  btn.addEventListener("click", () => {
-    const filter = btn.getAttribute("data-filter");
-    applyFilter(filter, btn);
-  });
-});
-
-// --- Výchozí nastavení ---
-// najdi tlačítko pro fotografie (data-filter="foto")
-const defaultBtn = document.querySelector('.filter-btn[data-filter="foto"]');
-if (defaultBtn) {
-  applyFilter("foto", defaultBtn);
-}
-</script>
 
 </body>
     

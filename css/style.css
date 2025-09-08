@@ -36,20 +36,35 @@ body {
   color: white;
 }
 
-.nav__header {
+.topnav {
   display: flex;
   gap: 50px;
 }
-.nav__header a {
+.topnav a,
+.icon {
   text-decoration: none;
   color: white;
 }
-.nav__header a:hover {
+.topnav a:hover,
+.topnav a:active,
+.icon {
   color: var(--color);
 }
 
-.nav__header a.active {
+.topnav a.active { /*tohle bylo v novem smazane*/
 color: var(--color);
+}
+
+.icon {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+topnav .icon {
+  display: none;
 }
 
 .hero {
@@ -62,7 +77,7 @@ color: var(--color);
 }
 
 .hero-bg {
-background-image: url("/css/2.JPG"); /* cesta k obrázku */
+background-image: url("/css/background.webp"); /* cesta k obrázku */
   background-repeat: no-repeat;        /* aby se neopakoval */
   background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
   background-position: center;         /* zarovnání na střed */
@@ -70,7 +85,7 @@ background-image: url("/css/2.JPG"); /* cesta k obrázku */
 
 .hero__hero-text h1 {
   font-size: 3.5em;
-   text-shadow: 2px 2px 5px black;
+  text-shadow: 2px 2px 5px black;
 
 }
 
@@ -138,6 +153,15 @@ background-image: url("/css/2.JPG"); /* cesta k obrázku */
 footer {
   background-color: black;
   color: darkgrey;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+footer a {
+  text-decoration: none;
+
 }
 
 
@@ -168,12 +192,25 @@ footer {
   .container {
     max-width: 768px;
   }
+
+  .hero__hero-text h1 {
+    font-size: 2.5em;
+  }
+
+
 }
 
 /* md */
 @media (max-width: 768px) {
   .container {
     max-width: 640px;
+  }
+  .hero__hero-text h1 {
+    font-size: 2em;
+  }
+
+  .hero__hero-text p {
+    font-size: 16px;
   }
 }
 
@@ -367,3 +404,32 @@ footer {
   justify-content: space-between;
   font-size: 0.8em;
 }
+
+@media (max-width: 768px) {
+    .topnav {
+        display: none;
+        flex-direction: column;
+        position: absolute;
+        top: 60px;
+        right: 0;
+        background: #fff;
+        width: 100%;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .topnav.active {
+        display: flex;
+        background: #000;
+        align-items: center;
+    }
+    .topnav.active a {
+        color: #fff;
+        padding: 10px 16px; /* Add padding here */
+        display: block;     /* Make links fill the width */
+    }
+    .icon {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }    
+  }
