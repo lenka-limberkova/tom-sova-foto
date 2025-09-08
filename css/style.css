@@ -77,7 +77,7 @@ topnav .icon {
 }
 
 .hero-bg {
-background-image: url("/css/background.webp"); /* cesta k obrázku */
+background-image: url("background.webp"); /* cesta k obrázku */
   background-repeat: no-repeat;        /* aby se neopakoval */
   background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
   background-position: center;         /* zarovnání na střed */
