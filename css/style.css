@@ -220,7 +220,7 @@ footer a {
     font-size: 16px;
   }
 
-  .skills-gear {
+  .service {
     display: flex;
     flex-direction: column;
   }
@@ -438,14 +438,18 @@ button {
     position: relative;
 }
 
-.skills-gear {
+.service {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
   margin-top: 50px;
 }
 
-.skills-gear h2{
+.sevice__photo {
+  padding: 20px;
+}
+
+.heading h2, h3{
   color: var(--color);
   margin-bottom: 10px;
 }
@@ -495,3 +499,4 @@ footer {
         right: 20px;
     }    
   }
+
