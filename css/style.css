@@ -38,7 +38,6 @@ body {
 
 .topnav {
   display: flex;
-  gap: 50px;
 }
 .topnav a,
 .icon {
@@ -483,7 +482,7 @@ footer {
     }
     .topnav.active a {
         color: #fff;
-        padding: 10px 16px; /* Add padding here */
+        padding: 20px; /* Add padding here */
         display: block;     /* Make links fill the width */
     }
     .icon {
