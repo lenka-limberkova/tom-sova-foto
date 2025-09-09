@@ -190,7 +190,7 @@ footer a {
 /* lg */
 @media (max-width: 1024px) {
   .container {
-    max-width: 768px;
+    width: 100%;
   }
 
   .hero__hero-text h1 {
@@ -210,10 +210,10 @@ footer a {
 /* md */
 @media (max-width: 768px) {
   .container {
-    max-width: 640px;
+    width: 100%;
   }
   .hero__hero-text h1 {
-    font-size: 2em;
+    font-size: 1.8em;
   }
 
   .hero__hero-text p {
@@ -231,7 +231,15 @@ footer a {
 /* sm */
 @media (max-width: 640px) {
   .container {
-    max-width: 475px;
+    width: 100%;
+  }
+
+  .hero__hero-text h1 {
+    font-size: 1.5em;
+  }
+
+  .hero__hero-text p {
+    font-size: 14px;
   }
 }
 
@@ -240,6 +248,43 @@ footer a {
   .container {
     width: 100%;
   }
+
+  .hero__hero-text h1 {
+    font-size: 1.2em;
+  }
+
+  .hero__hero-text p {
+    font-size: 10px;
+  }
+
+  .hero__hero-text {
+    padding: 0px;
+  }
+
+  .hero__buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+  }
+
+  .btn {
+    width: 200px;
+  text-align: center;
+  font-size: 15px;
+  }
+
+  footer {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    font-size: 0.5em;
+
+
+  }
+
+
 }
 
 /*PORTFOLIO*/
