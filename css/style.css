@@ -38,6 +38,7 @@ body {
 
 .topnav {
   display: flex;
+  gap: 30px;
 }
 .topnav a,
 .icon {
