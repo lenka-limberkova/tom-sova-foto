@@ -241,6 +241,7 @@ footer a {
   .hero__hero-text p {
     font-size: 14px;
   }
+
 }
 
 /* xs */
@@ -258,7 +259,7 @@ footer a {
   }
 
   .hero__hero-text {
-    padding: 0px;
+    padding: 60px;
   }
 
   .hero__buttons {
