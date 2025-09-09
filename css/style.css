@@ -480,6 +480,8 @@ footer {
         display: flex;
         background: #000;
         align-items: center;
+        gap: 0px;
+        z-index: 2;
     }
     .topnav.active a {
         color: #fff;
