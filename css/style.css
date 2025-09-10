@@ -186,6 +186,10 @@ footer a {
   .container {
     max-width: 1024px;
   }
+
+  .hero__hero-text h1 {
+    font-size: 3em;
+  }
 }
 
 /* lg */
@@ -214,7 +218,7 @@ footer a {
     width: 100%;
   }
   .hero__hero-text h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .hero__hero-text p {
@@ -236,8 +240,13 @@ footer a {
   }
 
   .hero__hero-text h1 {
-    font-size: 1.5em;
-  }
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 2em;
+ }
+.hero {
+  padding: 20px 20px;
+}
 
   .hero__hero-text p {
     font-size: 14px;
@@ -251,20 +260,15 @@ footer a {
     width: 100%;
   }
 
-  .hero__hero-text h1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 2em;
-  }
-  }
+ 
+
 
   .hero__hero-text p {
     font-size: 10px;
+  
   }
 
-  .hero__hero-text {
-    padding: 60px;
-  }
+ 
 
   .hero__buttons {
     display: flex;
