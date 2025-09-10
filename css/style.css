@@ -252,7 +252,10 @@ footer a {
   }
 
   .hero__hero-text h1 {
-    font-size: 1.2em;
+    writing-mode: vertical-lr;
+    text-orientation: upright;
+    font-size: 2em;
+  }
   }
 
   .hero__hero-text p {
