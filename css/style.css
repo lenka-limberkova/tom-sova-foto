@@ -63,9 +63,6 @@ color: var(--color);
   cursor: pointer;
 }
 
-topnav .icon {
-  display: none;
-}
 
 .hero {
   display: flex;
@@ -79,7 +76,7 @@ topnav .icon {
 .hero-bg {
 background-image: url("background.webp"); /* cesta k obrázku */
   background-repeat: no-repeat;        /* aby se neopakoval */
-  background-size: cover;              /* roztáhne se přes šířku i výšku sekce */
+  background-size: cover;              /* roztáhne se přes šířku   i výšku sekce */
   background-position: center;         /* zarovnání na střed */
 }
 
