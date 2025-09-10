@@ -238,14 +238,12 @@ footer a {
   .container {
     width: 100%;
   }
+.hero__hero-text h1 {
+    font-size: 1.5em;
+  }
 
-  .hero__hero-text h1 {
-    writing-mode: vertical-lr;
-    text-orientation: upright;
-    font-size: 2em;
- }
 .hero {
-  padding: 20px 20px;
+  padding: 80px 10px;
 }
 
   .hero__hero-text p {
