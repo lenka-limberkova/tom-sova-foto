@@ -82,8 +82,9 @@ background-image: url("background.webp"); /* cesta k obrázku */
 }
 
 .hero__hero-text h1 {
-  font-size: 3.5em;
+  font-size: 4.5em;
   text-shadow: 2px 2px 5px black;
+  text-align:justify;
 
 }
 
@@ -91,6 +92,8 @@ background-image: url("background.webp"); /* cesta k obrázku */
   color: var(--color);
    text-shadow: 2px 2px 5px black;
 }
+
+
 
 
 .hero__buttons {
