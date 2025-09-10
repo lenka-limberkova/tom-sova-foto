@@ -69,6 +69,7 @@ color: var(--color);
   flex-direction: column;
   height: 100%;
   padding: 50px;
+  gap: 30px;
   
 
 }
@@ -87,6 +88,7 @@ background-image: url("background.webp"); /* cesta k obrázku */
   text-align:justify;
 
 }
+
 
 .text--color {
   color: var(--color);
@@ -110,7 +112,6 @@ background-image: url("background.webp"); /* cesta k obrázku */
   display: flex;
   flex-direction: column;
   gap: 20px;
-  text-align: center;
 }
 
 .hero__hero-text p {
@@ -242,7 +243,7 @@ footer a {
   }
 
 .hero {
-  padding: 80px 10px;
+  padding: 80px 10px 0px 10px;
 }
 
   .hero__hero-text p {
@@ -257,7 +258,9 @@ footer a {
     width: 100%;
   }
 
- 
+ .hero__hero-text h1 {
+    font-size: 1.3em;
+  }
 
 
   .hero__hero-text p {
