@@ -82,7 +82,7 @@ background-image: url("background.webp"); /* cesta k obrázku */
 }
 
 .hero__hero-text h1 {
-  font-size: 4.5em;
+  font-size: 5em;
     font-family: "Playfair", serif;
   text-shadow: 2px 2px 5px black;
   text-align: justify;
@@ -249,7 +249,7 @@ footer a {
   }
 
  .hero__hero-text h1 {
-    font-size: 2.3em;
+    font-size: 2.2em;
   }
 
 
