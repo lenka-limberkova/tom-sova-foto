@@ -247,11 +247,15 @@ footer a {
   }
 
  .hero__hero-text h1 {
-    font-size: 1.8em;
+    font-size: 2em;
   }
 
   .hero {
-  padding: 50px 10px;
+  padding: 50px 15px;
+}
+
+.hero__buttons {
+  margin-top: 70px;
 }
 
   
