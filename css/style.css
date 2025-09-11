@@ -38,7 +38,7 @@ body {
 
 .topnav {
   display: flex;
-  gap: 30px;
+  gap: 40px;
 }
 .topnav a,
 .icon {
@@ -69,7 +69,6 @@ color: var(--color);
   flex-direction: column;
   height: 100%;
   padding: 50px;
-  gap: 30px;
   
 
 }
@@ -84,8 +83,9 @@ background-image: url("background.webp"); /* cesta k obrázku */
 
 .hero__hero-text h1 {
   font-size: 4.5em;
+    font-family: "Playfair", serif;
   text-shadow: 2px 2px 5px black;
-  text-align:justify;
+  text-align: justify;
 
 }
 
@@ -95,23 +95,13 @@ background-image: url("background.webp"); /* cesta k obrázku */
    text-shadow: 2px 2px 5px black;
 }
 
-
-
-
-.hero__buttons {
- display: flex;
-  flex-direction: column;
-  height: 100%;
-  padding-left: 50px;
-}
-
-
-
 .hero__hero-text {
   font-size: 1.5em;
   display: flex;
   flex-direction: column;
   gap: 20px;
+      font-family: "Playfair", serif;
+
 }
 
 .hero__hero-text p {
@@ -129,6 +119,8 @@ background-image: url("background.webp"); /* cesta k obrázku */
   width: 250px;
   text-align: center;
   font-size: 20px;
+    border-radius: 5px;
+
 }
 
 .btn a {
@@ -137,11 +129,9 @@ background-image: url("background.webp"); /* cesta k obrázku */
 }
 
 .btn:hover {
-  color: black; 
   border: none;
-  background-color: var(--color);
+  background-color: #7164b9;
 }
-
 .promo {
   margin: 20px 0px;
 }
@@ -188,7 +178,7 @@ footer a {
   }
 
   .hero__hero-text h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 }
 
@@ -198,9 +188,6 @@ footer a {
     width: 100%;
   }
 
-  .hero__hero-text h1 {
-    font-size: 2.5em;
-  }
 
   .about-me {
     display: flex;
@@ -218,7 +205,7 @@ footer a {
     width: 100%;
   }
   .hero__hero-text h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
   .hero__hero-text p {
@@ -238,17 +225,20 @@ footer a {
   .container {
     width: 100%;
   }
-.hero__hero-text h1 {
-    font-size: 1.5em;
+
+   .hero__hero-text h1 {
+    font-size: 2.6em;
   }
 
-.hero {
-  padding: 80px 10px 0px 10px;
+  .hero {
+  
+  padding: 80px 20px 20px 20px;
+  
+
 }
 
-  .hero__hero-text p {
-    font-size: 14px;
-  }
+ 
+
 
 }
 
@@ -259,25 +249,11 @@ footer a {
   }
 
  .hero__hero-text h1 {
-    font-size: 1.3em;
+    font-size: 2.4em;
   }
 
 
-  .hero__hero-text p {
-    font-size: 10px;
   
-  }
-
- 
-.hero__buttons{
-  padding: 20px;
-}
-
-
-  .btn {
-    width: 200px;
-  font-size: 15px;
-  }
 
   footer {
     display: flex;
