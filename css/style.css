@@ -66,27 +66,48 @@ color: var(--color);
 
 .hero {
   display: flex;
-  flex-direction: column;
   height: 100%;
   padding: 50px 100px;
   
 
 }
 
-.hero-bg {
-background-image: url("background.webp"); /* cesta k obrázku */
-  background-repeat: no-repeat;        /* aby se neopakoval */
-  background-size: cover;              /* roztáhne se přes šířku   i výšku sekce */
-  background-position: center;         /* zarovnání na střed */
-  min-height: 100vh; /* aby div zabíral celou výšku viewportu */
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  gap: 100px;
+  margin-top: 70px;
 }
 
+.hero__img {
+  width: 744px;
+  height: 878px;
+  overflow: hidden; /* ořízne přečnívající části */
+    margin-left: auto;
+
+}
+
+.hero__img img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* fill jako ve Figmě */
+  border-radius: 50px;
+}
+
+
+
+
 .hero__hero-text h1 {
-  font-size: 5em;
+  font-size: 7em;
     font-family: "Playfair", serif;
   text-shadow: 2px 2px 5px black;
-  text-align: justify;
-
+ position: relative;
+  z-index: 3; /* nad obrázkem */
+  transform: translateX(-40px); /* posun do obrázku */
+      font-family: "Playfair", serif;
+margin-right: -300px;
 }
 
 
@@ -95,32 +116,25 @@ background-image: url("background.webp"); /* cesta k obrázku */
    text-shadow: 2px 2px 5px black;
 }
 
-.hero__hero-text {
-  font-size: 1.5em;
-  display: flex;
-  flex-direction: column;
-  gap: 20px;
-      font-family: "Playfair", serif;
-
-}
 
 .hero__hero-text p {
   color: var(--gray);
 
 }
 
+
+
 .btn {
   display: inline-block;       /* aby šlo nastavit padding */
   padding: 10px;
-  background-color: var(--color);
-  color: var(--white);                
+  background-color: white;
+  color: black;                
   text-decoration: none;      
   transition: background 0.3s;
   width: 250px;
   text-align: center;
   font-size: 20px;
     border-radius: 5px;
-
 }
 
 .btn a {
@@ -130,7 +144,7 @@ background-image: url("background.webp"); /* cesta k obrázku */
 
 .btn:hover {
   border: none;
-  background-color: #7164b9;
+  background-color: var(--color);
 }
 .promo {
   margin: 20px 0px;
@@ -178,15 +192,31 @@ footer a {
   }
 
   .hero__hero-text h1 {
-    font-size: 4em;
+    font-size: 5em;
   }
+
+  .hero__img {
+  width: 595px;
+  height: 702px;
 }
+}
+
 
 /* lg */
 @media (max-width: 1024px) {
   .container {
     width: 100%;
   }
+
+  .hero__hero-text h1 {
+    font-size: 5em;
+    margin-left: 30px;
+  }
+
+  .hero__img {
+  width: 800px;
+  height: 562px;
+}
 
 
   .about-me {
@@ -205,12 +235,10 @@ footer a {
     width: 100%;
   }
   .hero__hero-text h1 {
-    font-size: 3em;
+    font-size: 4em;
   }
 
-  .hero__hero-text p {
-    font-size: 16px;
-  }
+ 
 
   .service {
     display: flex;
@@ -227,12 +255,23 @@ footer a {
   }
 
    .hero__hero-text h1 {
-    font-size: 2.6em;
+    font-size: 3em;
   }
 
-.hero {
-  padding: 50px 25px;
+   .hero__img {
+  width: 800px;
 }
+
+.hero__text-wrapper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  z-index: 2;
+  gap: 50px;
+  margin-top: 70px;
+}
+
+
   
 
 }
@@ -243,21 +282,19 @@ footer a {
 /* xs */
 @media (max-width: 475px) {
   .container {
-    width: 100%;
+    width: 95%;
   }
 
  .hero__hero-text h1 {
-    font-size: 2em;
+    font-size: 3em;
   }
 
-  .hero {
-  padding: 50px 15px;
-}
+  .btn {
+    margin: 0;
+      width: 150px;
+      font-size: 12px;
 
-.hero__buttons {
-  margin-top: 70px;
-}
-
+  }
   
 
   footer {
