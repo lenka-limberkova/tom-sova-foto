@@ -234,11 +234,18 @@ footer a {
   .container {
     width: 100%;
   }
-  .hero__hero-text h1 {
-    font-size: 4em;
+    .hero {
+    flex-direction: column;   /* text nahoře, obrázek pod ním */
+    padding: 0;               /* bez paddingu, aby obraz šel od okraje k okraji */
   }
 
  
+  .hero__img img {
+    width: 800px;
+    height: 100%;
+    object-fit: cover; /* ořízne, ale vyplní celý prostor */
+  }
+}
 
   .service {
     display: flex;
@@ -246,31 +253,11 @@ footer a {
   }
 
 
-}
-
 /* sm */
 @media (max-width: 640px) {
   .container {
     width: 100%;
   }
-
-   .hero__hero-text h1 {
-    font-size: 3em;
-  }
-
-   .hero__img {
-  width: 800px;
-}
-
-.hero__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-  gap: 50px;
-  margin-top: 70px;
-}
-
 
   
 
