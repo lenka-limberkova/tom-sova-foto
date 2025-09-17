@@ -63,69 +63,29 @@ color: var(--color);
   cursor: pointer;
 }
 
+h1 {
+    text-align: center;
+    margin: 0;
+   }
 
-.hero {
+    .hero {
   display: flex;
-  height: 100%;
-  padding: 50px 100px;
-  
-
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; /* Full viewport height */
 }
 
-.hero__text-wrapper {
-  display: flex;
-  flex-direction: column;
-  position: relative;
-  z-index: 2;
-  gap: 100px;
-  margin-top: 70px;
-}
+    .hero h1{
+      font-size: 120px;
+    }
 
-.hero__img {
-  width: 744px;
-  height: 878px;
-  overflow: hidden; /* ořízne přečnívající části */
-    margin-left: auto;
-
-}
-
-.hero__img img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover; /* fill jako ve Figmě */
-  border-radius: 50px;
-}
-
-
-
-
-.hero__hero-text h1 {
-  font-size: 7em;
-    font-family: "Playfair", serif;
-  text-shadow: 2px 2px 5px black;
- position: relative;
-  z-index: 3; /* nad obrázkem */
-  transform: translateX(-40px); /* posun do obrázku */
-      font-family: "Playfair", serif;
-margin-right: -300px;
-}
-
-
-.text--color {
-  color: var(--color);
-   text-shadow: 2px 2px 5px black;
-}
-
-
-.hero__hero-text p {
-  color: var(--gray);
-
-}
-
-
+    .hero img {
+      width: 100%;
+    }
 
 .btn {
-  display: inline-block;       /* aby šlo nastavit padding */
+  display: block;
+  margin: 50px auto; /* centers horizontally */
   padding: 10px;
   background-color: white;
   color: black;                
@@ -146,19 +106,42 @@ margin-right: -300px;
   border: none;
   background-color: var(--color);
 }
-.promo {
-  margin: 20px 0px;
+
+.portfolio-sample h2 {
+  margin: 50px 0px;
+  text-align: center;
+  color: var(--color);
 }
 
-.promo ul {
-  list-style-position: inside;
-  margin: 20px;
+.gallery-hp {
+  display: flex;
+  gap: 16px;              /* mezery mezi fotkami */
+  justify-content: space-between;
+  flex-wrap: wrap;        /* umožní zalomení na menších obrazovkách */
+  padding: 20px;
 }
+
+.gallery-hp__item {
+  flex: 1 1 calc(33.333% - 16px); /* tři vedle sebe */
+  aspect-ratio: 3 / 4;            /* na výšku */
+  overflow: hidden;
+  border-radius: 8px;
+  background: #f0f0f0;
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+.gallery-hp__item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
 
 footer {
   background-color: black;
   color: darkgrey;
-  height: 40px;
+  height: 100px;
   display: flex;
   justify-content: center;
   align-items: center;
