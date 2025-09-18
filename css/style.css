@@ -67,7 +67,7 @@ color: var(--color);
 
 
 .hero h1 {
-  font-size: 120px;
+  font-size: 80px;
   font-weight: 800;
   text-align: center;
 }
@@ -173,6 +173,11 @@ h2 {
   height: 100%;
   object-fit: cover;
   display: block;
+  opacity: 1;
+}
+
+.gallery-hp__item img:hover {
+  opacity: 0.9;
 }
 
 
