@@ -12,6 +12,11 @@
 }
 
 
+html, body {
+  overflow-x: hidden;
+}
+
+
 /*HOMEPAGE*/
 
 body {
@@ -72,19 +77,32 @@ color: var(--color);
   justify-content: center;
 }
 .hero h1 {
- 
   margin-top: 100px;
   color: white;
   font-size: 100px;
   text-shadow: 3px 3px 5px black;
   font-style: italic;
+  text-align: center;
 }
 
+.hero img {
+  width: 100%;
+}
 
-
-    .hero img {
-      width: 100%;
-    }
+.hero-bg {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 0% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 100% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    url("../img/homepage/portret-bw.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
 
 
 .btn {
@@ -135,8 +153,6 @@ h2 {
   flex: 1 1 calc(33.333% - 25px); /* tři vedle sebe */
   aspect-ratio: 3 / 4;            /* na výšku */
   overflow: hidden;
-  background: #f0f0f0;
-  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
 }
 
 .gallery-hp__item img {
@@ -163,7 +179,6 @@ footer {
 
 footer a {
   text-decoration: none;
-
 }
 
 
@@ -188,14 +203,6 @@ footer a {
     max-width: 1280px;
   }
 
-  .hero__hero-text h1 {
-    font-size: 5em;
-  }
-
-  .hero__img {
-  width: 595px;
-  height: 702px;
-}
 }
 
 
@@ -205,22 +212,10 @@ footer a {
     width: 100%;
   }
 
-  .hero__hero-text h1 {
-    font-size: 5em;
-    margin-left: 30px;
-  }
-
-  .hero__img {
-  width: 800px;
-  height: 562px;
-}
-
-
   .about-me {
     display: flex;
     flex-direction: column;
   }
-
 
 
 
@@ -236,12 +231,16 @@ footer a {
     padding: 0;               /* bez paddingu, aby obraz šel od okraje k okraji */
   }
 
- 
-  .hero__img img {
-    width: 800px;
-    height: 100%;
-    object-fit: cover; /* ořízne, ale vyplní celý prostor */
+  .hero h1 {
+    font-size: 5em;
   }
+
+  .gallery-hp {
+    flex-direction: column;
+    padding: 10px;
+  }
+
+
 }
 
   .service {
@@ -269,12 +268,11 @@ footer a {
     width: 95%;
   }
 
- .hero__hero-text h1 {
+  .hero h1 {
     font-size: 3em;
   }
 
   .btn {
-    margin: 0;
       width: 150px;
       font-size: 12px;
 
@@ -524,17 +522,6 @@ footer {
     }    
   }
 
-  .hero-bg {
-  background-image: url("../img/homepage/portret-bw.jpg");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  min-height: 100vh;
-  position: relative;
-}
 
-html, body {
-  overflow-x: hidden;
-}
+
 
