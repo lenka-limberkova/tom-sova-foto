@@ -95,7 +95,7 @@ color: var(--color);
     radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
     radial-gradient(ellipse 80% 60% at 0% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
     radial-gradient(ellipse 80% 60% at 100% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    url("../img/homepage/portret-bw.jpg");
+    url("bg.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
