@@ -385,7 +385,7 @@ button {
 .video-section {
       max-width: 560px;
       margin: 0 auto;
-      gap: 50px;
+      gap: 30px;
       display: flex;
       flex-direction: column;
     }
@@ -431,6 +431,12 @@ button {
       left: 0;
       width: 100%;
       height: 100%;
+    }
+
+    .video-row {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
     }
 
 
