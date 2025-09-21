@@ -277,16 +277,25 @@ footer a {
       font-size: 12px;
 
   }
+
+  .portfolio-sample {
+    margin-bottom: 20px;
+  }
   
 
   footer {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
     font-size: 0.5em;
 
 
   }
+
+
+.gallery {
+  padding: 0px;
+}
+
 
 
 }
