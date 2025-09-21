@@ -439,6 +439,13 @@ button {
       gap: 30px;
     }
 
+    .video-wrapper.vertical {
+  aspect-ratio: 9 / 16;
+  max-width: 360px;
+  margin: 0 auto;
+}
+
+
 
 
 
