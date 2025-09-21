@@ -171,16 +171,22 @@ h2 {
 footer {
   background-color: black;
   color: darkgrey;
-  height: 100px;
+  height: 80px;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 footer a {
   text-decoration: none;
 }
 
+.credits {
+  margin: 10px 0px;
+}
+
+.credits a {
+  background-color: var(--gray);
+  font-weight: bold;
+}
 
 .container {
   max-width: 1536px;
