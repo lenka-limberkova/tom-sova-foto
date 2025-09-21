@@ -245,7 +245,6 @@ footer a {
 
   .service {
     display: flex;
-    flex-direction: column;
   }
 
 
@@ -281,6 +280,25 @@ footer a {
   .portfolio-sample {
     margin-bottom: 20px;
   }
+
+  .service {
+    flex-direction: column;
+  }
+
+  ul {
+  list-style-position: outside; /* výchozí – odrážka je vlevo */
+  padding-left: 1.2em;          /* mírné odsazení */
+}
+
+ul li {
+  text-indent: -1.2em;          /* posune text zpátky */
+  padding-left: 1.2em;          /* zarovná všechny řádky pod sebe */
+}
+
+p, li {
+  font-size: 14px;
+}
+
   
 
   footer {
@@ -448,8 +466,9 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 50px;
-  gap: 50px;
+  width: 80%;
+  gap: 30px;
+  margin-top: 20px;
 }
 
 
@@ -457,15 +476,13 @@ button {
 
 
 .about-me-portrait img {
-  width: 100%;
+  width: 450px;
+  height: auto;
   border-radius: 20px;
   
 }
 
-.about-me-portrait,
-.about-me-text {
-  flex: 1;
-}
+
 
 
 
@@ -473,16 +490,32 @@ button {
   display: flex;
   gap: 30px;
   justify-content: space-evenly;
-  margin-top: 50px;
 }
 
 .sevice__photo {
   padding: 20px;
 }
 
-.h3{
+h3{
   color: var(--color);
   margin-bottom: 10px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin: 50px auto;
+}
+
+.heading p {
+  text-align: center;
+}
+
+.gear {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 ul {
@@ -492,6 +525,17 @@ ul {
 li::marker {
   color: var(--color); /* jen odrážka */
   font-size: 1.2em; /* můžeš změnit i velikost */
+}
+
+.text-bottom {
+  font-size: 30px;
+  text-align: center;
+  margin: 50px auto;
+  color: #FFFFFF; 
+ background-image: linear-gradient(135deg, #FFFFFF 18%, #8C7ED6 57%); 
+ background-clip: text; 
+ -webkit-background-clip: text; 
+ -webkit-text-fill-color: transparent; 
 }
 
 footer {
@@ -530,7 +574,6 @@ footer {
         right: 20px;
     }    
   }
-
 
 
 
