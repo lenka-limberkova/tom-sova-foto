@@ -502,7 +502,10 @@ button {
 .about-me-text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+align-items: flex-start;  
+gap: 20px;
+padding: 30px;
+
 
 }
 
@@ -510,9 +513,8 @@ button {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 90%;
-  gap: 30px;
-  margin-top: 20px;
+max-width: 90%;  
+margin-top: 20px;
 }
 
 
@@ -520,7 +522,7 @@ button {
 
 
 .about-me-portrait img {
-  width: 450px;
+  width: 600px;
   height: auto;
   border-radius: 20px;
   
@@ -581,6 +583,7 @@ li::marker {
  -webkit-background-clip: text; 
  -webkit-text-fill-color: transparent; 
 }
+
 
 footer {
   display: flex;
