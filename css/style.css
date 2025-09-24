@@ -387,31 +387,29 @@ button {
 
 /* Video položky */
 
+
 .video-section {
-      max-width: 560px;
-      margin: 0 auto;
-      gap: 30px;
-      display: flex;
-      flex-direction: column;
-    }
+  display: flex;
+  flex-direction: column;   /* položky pod sebe */
+  align-items: center;      /* zarovnat na střed */
+  gap: 40px;                /* mezera mezi videi */
+}
 
-    .video-wrapper {
-      position: relative;
-      width: 100%;
-      padding-bottom: 56.25%; /* poměr 16:9 */
-      background: #000;
-      cursor: pointer;
-      overflow: hidden;
-    }
+.video-wrapper {
+  position: relative;
+  cursor: pointer;
+}
 
-    .video-thumbnail img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-    }
+.video-thumbnail {
+  position: relative;
+  display: inline-block;
+}
+
+.video-thumbnail img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
 
     .play-button {
       position: absolute;
@@ -430,25 +428,6 @@ button {
       opacity: 1;
     }
 
-    iframe {
-      position: absolute;
-      top: 0;
-      left: 0;
-      width: 100%;
-      height: 100%;
-    }
-
-    .video-row {
-      display: flex;
-      flex-direction: column;
-      gap: 30px;
-    }
-
-    .video-wrapper.vertical {
-  aspect-ratio: 9 / 16;
-  max-width: 360px;
-  margin: 0 auto;
-}
 
 
 

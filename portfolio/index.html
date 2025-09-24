@@ -82,11 +82,19 @@
             </div>
 
         
-           <div class="video-section">
+          <div class="video-section">
 
   <!-- Video 1 (16:9) -->
   <div class="item video">
     <div class="video-wrapper horizontal" data-id="dTCW_AQhR68">
+      
+      <!-- iframe bez src (jen prázdný, načte se až po kliknutí) -->
+      <iframe width="560" height="315" 
+        frameborder="0" 
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" 
+        allowfullscreen style="display:none;"></iframe>
+
+      <!-- thumbnail -->
       <div class="video-thumbnail">
         <img src="https://img.youtube.com/vi/dTCW_AQhR68/maxresdefault.jpg" alt="Náhled videa 1">
         <div class="play-button"></div>
@@ -94,17 +102,21 @@
     </div>
   </div>
 
-  <div class="video-row">
-    <!-- Video 2 (9:16) -->
-    <div class="item video">
-      <div class="video-wrapper vertical" data-id="yAPhE-mrY0Q">
-        <div class="video-thumbnail">
-          <img src="https://img.youtube.com/vi/yAPhE-mrY0Q/maxresdefault.jpg" alt="Náhled videa 2">
-          <div class="play-button"></div>
-        </div>
+  <!-- Video 2 (9:16) -->
+  <div class="item video">
+    <div class="video-wrapper vertical" data-id="yAPhE-mrY0Q">
+      
+      <iframe width="315" height="560"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+        allowfullscreen style="display:none;"></iframe>
+
+      <div class="video-thumbnail">
+        <img src="https://img.youtube.com/vi/yAPhE-mrY0Q/maxresdefault.jpg" alt="Náhled videa 2">
+        <div class="play-button"></div>
       </div>
     </div>
-
+  </div>
 
 </div>
 
