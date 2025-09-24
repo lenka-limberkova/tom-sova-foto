@@ -20,7 +20,7 @@ html, body {
 /*HOMEPAGE*/
 
 body {
-  font-family: "Dosis", sans-serif;
+  font-family: "Montserrat", sans-serif;
     background-color: black;
     color: white;
 }
@@ -81,7 +81,6 @@ color: var(--color);
   color: white;
   font-size: 100px;
   text-shadow: 3px 3px 5px black;
-  font-style: italic;
   text-align: center;
 }
 
