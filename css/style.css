@@ -273,6 +273,8 @@ button {
 .video-wrapper {
   position: relative;
   cursor: pointer;
+  
+  
 }
 
 .video-thumbnail {
@@ -581,6 +583,11 @@ ul li {
 
 .gallery .column {
     gap: 15px;
+}
+
+iframe {
+  overflow: hidden;
+  width: 100vw;
 }
 
 
