@@ -74,7 +74,7 @@ body {
 .topnav a:active,
 .icon {
   color: var(--color);
-    border-bottom: 2px solid var(--color); /* aktivní odkaz */
+  border-bottom: 2px solid var(--color); /* aktivní odkaz */
 
 }
 
@@ -109,8 +109,6 @@ color: var(--color);
 .hero img {
   width: 100%;
 }
-
-
 
 
 .btn {
@@ -151,10 +149,10 @@ h2 {
 
 .gallery-hp {
   display: flex;
-  gap: 25px;              /* mezery mezi fotkami */
+  gap: 25px;            
   justify-content: space-between;
   flex-wrap: wrap; 
-  margin-top: 50px;       /* umožní zalomení na menších obrazovkách */
+  margin-top: 50px;      
 }
 
 .gallery-hp__item {
@@ -203,6 +201,8 @@ footer a {
   padding-left: 0.5rem;
   padding-right: 0.5rem;
 }
+
+/*RESPONSIVE*/
 
 /* 2xl */
 @media (max-width: 1536px) {
@@ -282,11 +282,11 @@ footer a {
   }
 
   .hero h1 {
-    font-size: 3em;
+    font-size: 3.8em;
   }
 
   .btn {
-      width: 150px;
+      width: 160px;
       font-size: 12px;
 
   }
