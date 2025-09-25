@@ -475,12 +475,14 @@ li::marker {
   }
 
   .about-me {
-    display: flex;
     flex-direction: column;
   }
 
+  .about-me-text,
+.about-me-portrait {
+  flex: none;
 
-
+}
 }
 
 /* md */
@@ -530,6 +532,10 @@ color: var(--color);
     width: 100%;
   }
 
+   .service {
+    flex-direction: column;
+  }
+
 }
 
  
@@ -564,25 +570,23 @@ header {
     margin-bottom: 20px;
   }
 
-  .service {
-    flex-direction: column;
-  }
+ 
 
   ul {
   list-style-position: outside; /* výchozí – odrážka je vlevo */
-  padding-left: 1.2em;          /* mírné odsazení */
+  padding-left: 2em;          /* mírné odsazení */
 }
 
 ul li {
   text-indent: -1.2em;          /* posune text zpátky */
-  padding-left: 1.2em;          /* zarovná všechny řádky pod sebe */
+  padding-left: 1.5em;          /* zarovná všechny řádky pod sebe */
 }
   
 
   footer {
     display: flex;
     flex-direction: column;
-    font-size: 0.5em
+    font-size: 0.8em
 
   }
 
@@ -608,26 +612,6 @@ iframe {
 
 }
 
-/* Responsive: stack on mobile */
-@media (max-width: 900px) {
-  .about-me {
-    flex-direction: column;
-    gap: 30px;
-    align-items: center;
-  }
-  .about-me-text,
-  .about-me-portrait {
-    min-height: unset;
-    width: 100%;
-    align-items: center;
-  }
-}
-.about-me-portrait img {
-  width: 600px;
-  height: auto;
-  border-radius: 20px;
-  
-}
 
 /*mobile menu responsive*/
 
