@@ -652,6 +652,11 @@ iframe {
     right: 20px;
     z-index: 3;
   }
+
+  .icon {
+  -webkit-tap-highlight-color: transparent; /* odstraní tmavý flash na mobilu */
+  user-select: none;                         /* zabrání výběru textu při tapnutí */
+}
 }
 
 
