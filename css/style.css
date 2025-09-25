@@ -540,6 +540,15 @@ color: var(--color);
   .container {
     width: 100%;
   }
+header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;        /* aby zabírala celou šířku obrazovky */
+  z-index: 1000;
+  background-color: black;
+
+}
 
   .hero h1 {
     font-size: 3.8em;
@@ -590,6 +599,11 @@ iframe {
   width: 100vw;
 }
 
+.filter-btn {
+  z-index: 2000;
+  margin-top: 100px;
+  position:static;
+}
 
 
 }
