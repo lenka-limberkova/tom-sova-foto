@@ -509,6 +509,13 @@ color: var(--color);
 
 }
 
+.topnav a:hover,
+.topnav a:active,
+.icon {
+  border-bottom: none;
+
+}
+
  .gallery {
     flex-direction: column;
   }
@@ -659,7 +666,8 @@ iframe {
     z-index: 3;
   }
 
-  .icon {
+  .icon,
+  .topnav {
   -webkit-tap-highlight-color: transparent; /* odstraní tmavý flash na mobilu */
   user-select: none;                         /* zabrání výběru textu při tapnutí */
 }
