@@ -611,35 +611,45 @@ ul li {
 /*mobile menu responsive*/
 
 @media (max-width: 768px) {
-    .topnav {
-        display: none;
-        flex-direction: column;
-        position: absolute;
-        top: 60px;
-        right: 0;
-        background: #fff;
-        width: 100%;
-        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
-    }
-    .topnav.active {
-        display: flex;
-        background: #000;
-        align-items: center;
-        gap: 0px;
-        z-index: 2;
-    }
-    .topnav.active a {
-        color: #fff;
-        padding: 20px; /* Add padding here */
-        display: block;     /* Make links fill the width */
-    }
-    .icon {
-        display: block;
-        position: absolute;
-        top: 20px;
-        right: 20px;
-    }    
+  .topnav {
+    flex-direction: column;
+    position: absolute;
+    top: 0px;
+    right: 0;
+    background: #000; /* rovnou černé pozadí */
+    width: 100%;
+    max-height: 0;          /* schované menu */
+    opacity: 0;             /* neviditelné */
+    overflow: hidden;       /* schovat odkazy */
+    gap: 0;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    transition: max-height 0.4s ease, opacity 0.4s ease;
+    z-index: 2;
+        padding-top: 60px;  /* aby odkazy nezačínaly hned pod okrajem, ale až pod ikonou */
+
   }
+
+  .topnav.active {
+    max-height: 500px;      /* nastav dostatečně velkou výšku */
+    opacity: 1;             /* zobrazí se */
+  }
+
+  .topnav a {
+    color: #fff;
+    padding: 20px;
+    display: block;
+    text-align: center;
+  }
+
+  .icon {
+    display: block;
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    z-index: 3;
+  }
+}
+
 
 
 
