@@ -555,6 +555,12 @@ header {
 
 }
 
+.logo__header {
+    pointer-events: auto;
+    z-index: 9999;
+
+}
+
   .hero h1 {
     font-size: 3.8em;
   }
