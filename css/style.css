@@ -25,6 +25,21 @@ body {
     color: white;
 }
 
+.hero-bg {
+  background-image:
+    radial-gradient(ellipse 80% 60% at 0% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    radial-gradient(ellipse 80% 60% at 100% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
+    url("bg.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100vw;
+  min-height: 100vh;
+  position: relative;
+}
+
 
 .header-inner {
   display: flex;
@@ -51,15 +66,22 @@ body {
   text-decoration: none;
   font-weight: 600;
   color: white;
+  border-bottom: 2px solid transparent; /* "rezervuje" místo pro čáru */
+  padding-bottom: 4px; /* určí vzdálenost čáry od textu */
+  transition: border-color 0.3s;
 }
 .topnav a:hover,
 .topnav a:active,
 .icon {
   color: var(--color);
+    border-bottom: 2px solid var(--color); /* aktivní odkaz */
+
 }
 
 .topnav a.active { /*tohle bylo v novem smazane*/
 color: var(--color);
+    border-bottom: 2px solid var(--color); /* aktivní odkaz */
+
 }
 
 .icon {
@@ -88,20 +110,7 @@ color: var(--color);
   width: 100%;
 }
 
-.hero-bg {
-  background-image:
-    radial-gradient(ellipse 80% 60% at 0% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    radial-gradient(ellipse 80% 60% at 0% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    radial-gradient(ellipse 80% 60% at 100% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    url("bg.webp");
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  width: 100vw;
-  min-height: 100vh;
-  position: relative;
-}
+
 
 
 .btn {
@@ -520,7 +529,7 @@ padding: 30px;
   width: 350px;
   max-width: 100%;
   border-radius: 20px;
-  box-shadow: 0 8px 32px rgba(0,0,0,0.15);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.149);
 }
 
 /* Responsive: stack on mobile */
