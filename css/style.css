@@ -667,7 +667,9 @@ iframe {
   }
 
   .icon,
-  .topnav {
+  .topnav,
+  .logo__header,
+  .buttons {
   -webkit-tap-highlight-color: transparent; /* odstraní tmavý flash na mobilu */
   user-select: none;                         /* zabrání výběru textu při tapnutí */
 }
