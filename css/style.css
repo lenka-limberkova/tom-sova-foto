@@ -30,7 +30,7 @@ body {
     radial-gradient(ellipse 80% 60% at 100% 0%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
     radial-gradient(ellipse 80% 60% at 0% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
     radial-gradient(ellipse 80% 60% at 100% 100%, rgba(0,0,0,0.8) 0%, rgba(0,0,0,0) 70%),
-    url("bg.webp");
+    url("bg2.webp");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -92,38 +92,53 @@ color: var(--color);
 }
 
 .hero {
-  height: 50vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
+  flex-direction: column;
+  padding: 6.5em;
+  gap: 3em;
 }
+
+
 .hero h1 {
-  margin-top: 100px;
-  color: white;
+  width: 100vh;
+}
+
+
+
+
+.white-text {
+  color: #fff;
   font-size: 100px;
-  text-shadow: 3px 3px 5px black;
-  text-align: center;
+    text-shadow: 3px 3px 5px black;
+
+}  
+
+.color-text {
+  color: var(--color);
+  font-size: 80px;
+    text-shadow: 3px 3px 5px black;
+
+}  
+
+.buttons {
+  display: flex;
+  flex-direction: column;
+ 
 }
-
-.hero img {
-  width: 100%;
-}
-
-
 .btn {
-  display: block;
-  margin: 100px auto; /* centers horizontally */
   padding: 15px;
   background-color: white;
   color: black;
   font-weight: 600;             
   text-decoration: none;      
   transition: background 0.3s;
-  width: 250px;
+  width: 200px;
   text-align: center;
-  font-size: 16px;
+  font-size: 14px;
     border-radius: 5px;
 }
+
+
 
 .btn a {
   text-decoration: none;
@@ -485,11 +500,12 @@ li::marker {
   }
     .hero {
     flex-direction: column;   /* text nahoře, obrázek pod ním */
-    padding: 0;               /* bez paddingu, aby obraz šel od okraje k okraji */
+    justify-content: center;
+    padding: 4em;               /* bez paddingu, aby obraz šel od okraje k okraji */
   }
 
   .hero h1 {
-    font-size: 5em;
+    font-size: 2em;
   }
 
   .gallery-hp {
@@ -536,9 +552,38 @@ color: var(--color);
     flex-direction: column;
   }
 
+  .hero {
+    padding: 4em 2em;
+  }
+
+.white-text {
+  font-size: 80px;
 }
 
- 
+.color-text {
+  font-size: 64px;
+}
+
+}
+
+@media (max-width: 500px) {
+  .container {
+    width: 100%;
+  }
+
+.hero h1 {
+  width: 90vw;
+}
+.white-text {
+  font-size: 72px;
+}
+
+.color-text {
+  font-size: 60px;
+}
+
+  
+}
 
 
 /* xs */
@@ -558,14 +603,33 @@ header {
 
 .logo__header {
     pointer-events: auto;
-    z-index: 9999;
+    z-index: 2000;
 
 }
 
-  .hero h1 {
-    font-size: 3.8em;
-  }
+.hero {
+  justify-content: center;
+  align-items: center;
+  gap: 10em;
+}
 
+.hero h1 {
+  width: 85vw;
+  padding-top: 4em;
+}
+
+
+ .white-text {
+  font-size: 40px;
+}
+
+.color-text {
+  font-size: 40px;
+}
+
+.hero {
+    padding-top: 60px; /* menší odsazení na mobilech */
+  }
   .btn {
       width: 160px;
       font-size: 12px;
